@@ -20,11 +20,11 @@
 }
 
 .title {
-
+  font-size: 1.25rem;
 }
 
 .IBAN {
-
+  opacity: .8;
 }
 
 .deposits {
@@ -59,7 +59,7 @@
   background-color: #545454;
   border: 1px solid #545454;
   box-shadow: 4px 4px 6px black;
-  transition: color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
 }
 
 .newDeposit {
@@ -160,7 +160,7 @@
     background-color: #c5c5c5;
     border: 1px solid #c5c5c5;
     box-shadow: 4px 4px 6px black;
-    transition: color 0.5s ease, border 0.5s ease, box-shadow 0.5s ease;
+    transition: background-color 0.5s ease, border 0.5s ease, box-shadow 0.5s ease;
   }
 }
 
@@ -183,7 +183,7 @@
   background-color: #d57c7c;
   border: 1px solid #d57c7c;
   box-shadow: 4px 4px 6px black;
-  transition: color 0.5s ease, border 0.5s ease, box-shadow 0.5s ease;
+  transition: background-color 0.5s ease, border 0.5s ease, box-shadow 0.5s ease;
 }
 
 .deposit {
@@ -240,6 +240,9 @@
 }
 
 .viewDeposit {
+  color: inherit;
+  background-color: inherit;
+  font-size: 1rem;
   border: 1px solid #313131;
   border-radius: 3px;
   padding: 0.4rem 1rem;
@@ -250,5 +253,5 @@
   background-color: #c5c5c5;
   border: 1px solid #c5c5c5;
   box-shadow: 4px 4px 6px black;
-  transition: color 0.5s ease, border 0.5s ease, box-shadow 0.5s ease;
+  transition: background-color 0.5s ease, border 0.5s ease, box-shadow 0.5s ease;
 }

@@ -19,7 +19,7 @@
 .home:hover {
   background-color: #545454;
   box-shadow: 4px 4px 6px black;
-  transition: color 0.8s ease, box-shadow 0.8s ease;
+  transition: background-color 0.8s ease, box-shadow 0.8s ease;
 }
 
 .nav {
@@ -42,7 +42,7 @@
   background-color: #545454;
   border: 1px solid #545454;
   box-shadow: 4px 4px 6px black;
-  transition: color 0.5s ease, border 0.5s ease, box-shadow 0.5s ease;
+  transition: background-color 0.5s ease, border 0.5s ease, box-shadow 0.5s ease;
 }
 
 .signIn {
@@ -55,5 +55,5 @@
   cursor: pointer;
   background-color: #545454;
   box-shadow: 4px 4px 6px black;
-  transition: color 0.8s ease, box-shadow 0.8s ease;
+  transition: background-color 0.8s ease, box-shadow 0.8s ease;
 }

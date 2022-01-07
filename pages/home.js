@@ -2,7 +2,6 @@ import Head from "next/head";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Header from "../components/header";
-import Link from "next/link";
 import styles from "../styles/UserHome.module.scss";
 import { createDeposits, getDeposits, getUser } from "../lib/service";
 
@@ -121,6 +120,11 @@ export default function User() {
             </>
           ) : null}
           {deposits.map((deposit) => {
+            function viewDetails() {
+              window.sessionStorage.setItem("deposit", deposit.name);
+              router.push(`/deposit/${deposit.name}`);
+            }
+
             return (
               <div key={deposit.name} className={styles.deposit}>
                 <div className={styles.details}>
@@ -139,11 +143,9 @@ export default function User() {
                     {deposit.amount}
                   </p>
                 </div>
-                <Link href={`/deposit/${deposit.name}`} passHref>
-                  <div className={styles.viewDeposit}>
-                    <a>Details</a>
-                  </div>
-                </Link>
+                <button onClick={viewDetails} className={styles.viewDeposit}>
+                  Details
+                </button>
               </div>
             );
           })}

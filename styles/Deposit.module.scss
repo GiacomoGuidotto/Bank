@@ -1,0 +1,154 @@
+.main {
+  min-height: calc(100vh - 5rem);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.banner {
+  padding: 1rem 2rem;
+  height: 10rem;
+  width: 100%;
+  background: #afafaf;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: space-between;
+}
+
+.info {
+  width: 10rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.title {
+  max-height: 3rem;
+  font-size: 1.25rem;
+  overflow: hidden;
+  line-break: anywhere;
+}
+
+.type {
+  opacity: .8;
+}
+
+.amountBox {
+  height: 100%;
+  min-width: 15rem;
+  max-width: 25rem;
+  padding: 1.2rem;
+  border: 2px solid #313131;
+  border-radius: 3px;
+  box-shadow: 4px 4px 6px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.amount {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.positiveAmount {
+  margin: 0 0 0 5px;
+  color: #006e21;
+}
+
+.negativeAmount {
+  margin: 0 0 0 5px;
+  color: #6e0000;
+}
+
+.addTransaction {
+  color: inherit;
+  background-color: inherit;
+  font-size: 1rem;
+  border: 1px solid #313131;
+  border-radius: 3px;
+  padding: .5rem .8rem;
+}
+
+.addTransaction:hover {
+  cursor: pointer;
+  background-color: #949494;
+  border: 1px solid #949494;
+  box-shadow: 4px 4px 6px black;
+  transition: background-color 0.5s ease, border 0.5s ease, box-shadow 0.5s ease;
+}
+
+.transactions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.transactionsHeader {
+  width: 100%;
+  height: 3rem;
+  background-color: #313131;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.transaction {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #313131;
+}
+
+.details {
+  width: 15rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  overflow: hidden;
+  line-break: anywhere;
+
+  p {
+    height: 1.1rem;
+    overflow: hidden;
+    margin: 0;
+  }
+}
+
+.author {
+  opacity: .7;
+}
+
+.transactionAmount {
+  width: 5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  overflow: visible;
+
+  p {
+    margin: 0;
+  }
+}
