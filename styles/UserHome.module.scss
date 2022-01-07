@@ -1,0 +1,254 @@
+
+.main {
+  min-height: calc(100vh - 5rem);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.banner {
+  padding: 2rem;
+  height: 10rem;
+  width: 100%;
+  background: #afafaf;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: space-around;
+}
+
+.title {
+
+}
+
+.IBAN {
+
+}
+
+.deposits {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.depositsHeader {
+  width: 100%;
+  height: 3rem;
+  background-color: #313131;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.addDeposit {
+  background-color: inherit;
+  color: inherit;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 0.3rem 1rem;
+}
+
+.addDeposit:hover {
+  cursor: pointer;
+  background-color: #545454;
+  border: 1px solid #545454;
+  box-shadow: 4px 4px 6px black;
+  transition: color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.newDeposit {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: .8rem 2rem;
+  border-bottom: 1px solid #313131;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  width: 15rem;
+}
+
+.inputLabel {
+  color: #8597a3;
+  position: absolute;
+  bottom: .5rem;
+  transition: .25s ease;
+}
+
+.input {
+  border: none;
+  z-index: 1;
+  background-color: transparent;
+  border-bottom: 2px solid #eee;
+  font: inherit;
+  font-size: 1rem;
+  padding: .25rem 0;
+
+  &:focus, &:valid {
+    outline: none;
+    border-bottom-color: #3b3b3b;
+
+    & + .inputLabel {
+      color: #3b3b3b;
+      transform: translateY(-1.6rem);
+    }
+  }
+
+}
+
+.selectField {
+  width: 10rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.selectLabel {
+  color: #8597a3;
+  transition: .25s ease;
+}
+
+.select {
+  width: 100%;
+  border: none;
+  z-index: 1;
+  background-color: transparent;
+  border-bottom: 2px solid #eee;
+  font: inherit;
+  font-size: 1rem;
+  padding: .25rem 0;
+
+  &:focus {
+    outline: none;
+    border-bottom-color: #3b3b3b;
+
+    & + .selectLabel {
+      color: #3b3b3b;
+    }
+  }
+}
+
+.action {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  button {
+    color: inherit;
+    background-color: inherit;
+    font-size: 1rem;
+    border: 1px solid #313131;
+    border-radius: 3px;
+    padding: 0.4rem 1rem;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: #c5c5c5;
+    border: 1px solid #c5c5c5;
+    box-shadow: 4px 4px 6px black;
+    transition: color 0.5s ease, border 0.5s ease, box-shadow 0.5s ease;
+  }
+}
+
+.error {
+  z-index: 2;
+  color: inherit;
+  background-color: white;
+  font-size: 1rem;
+  border: 1px solid #520000;
+  border-radius: 3px;
+  padding: 0.4rem 1rem;
+  position: absolute;
+  top: 19.42rem;
+  right: 8rem;
+  transition: .5s ease;
+}
+
+.error:hover {
+  cursor: pointer;
+  background-color: #d57c7c;
+  border: 1px solid #d57c7c;
+  box-shadow: 4px 4px 6px black;
+  transition: color 0.5s ease, border 0.5s ease, box-shadow 0.5s ease;
+}
+
+.deposit {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #313131;
+}
+
+.details {
+  width: 15rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  overflow: hidden;
+  line-break: anywhere;
+
+  p {
+    height: 1.1rem;
+    overflow: hidden;
+    margin: 0;
+  }
+}
+
+.type {
+  opacity: .7;
+}
+
+.amount {
+  width: 5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  overflow: visible;
+
+  p {
+    margin: 0;
+  }
+}
+
+.positiveAmount {
+  color: #006e21;
+}
+
+.negativeAmount {
+  color: #6e0000;
+}
+
+.viewDeposit {
+  border: 1px solid #313131;
+  border-radius: 3px;
+  padding: 0.4rem 1rem;
+}
+
+.viewDeposit:hover {
+  cursor: pointer;
+  background-color: #c5c5c5;
+  border: 1px solid #c5c5c5;
+  box-shadow: 4px 4px 6px black;
+  transition: color 0.5s ease, border 0.5s ease, box-shadow 0.5s ease;
+}

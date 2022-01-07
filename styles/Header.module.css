@@ -1,0 +1,59 @@
+.header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #313131;
+  color: white;
+}
+
+.home {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 4px;
+}
+
+.home:hover {
+  background-color: #545454;
+  box-shadow: 4px 4px 6px black;
+  transition: color 0.8s ease, box-shadow 0.8s ease;
+}
+
+.nav {
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.signUp {
+  margin: 0 1rem;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+}
+
+.signUp:hover {
+  cursor: pointer;
+  background-color: #545454;
+  border: 1px solid #545454;
+  box-shadow: 4px 4px 6px black;
+  transition: color 0.5s ease, border 0.5s ease, box-shadow 0.5s ease;
+}
+
+.signIn {
+  margin: 0 1rem;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+}
+
+.signIn:hover {
+  cursor: pointer;
+  background-color: #545454;
+  box-shadow: 4px 4px 6px black;
+  transition: color 0.8s ease, box-shadow 0.8s ease;
+}
