@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/Signin.module.scss";
 import {useState} from "react";
 import {useRouter} from "next/router";
@@ -35,6 +36,11 @@ export default function SignIn() {
       </Head>
 
       <main className={styles.main}>
+        <Link href="/">
+          <a className={styles.backToHome}>
+            <div>&lt;-- Go back</div>
+          </a>
+        </Link>
         <div className={styles.card}>
           <div className={styles.cardImage}>
             <Image

@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
-
 .main {
-  font-family: "DM Sans", sans-serif;
   line-height: 1.5;
   background-color: #f1f3fb;
   padding: 0 2rem;
@@ -18,8 +15,33 @@
   border-radius: 0;
 }
 
+.backToHome {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 425px;
+  width: 100%;
+
+  div {
+    padding: .5rem .8rem;
+    border-radius: 8px;
+    background-color: #FFF;
+    box-shadow: 0 10px 20px 0 #999;
+
+  }
+
+  div:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #3b3b3b;
+    box-shadow: 4px 4px 6px black;
+    transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+  }
+}
+
+
 .card {
-  margin: 2rem auto;
   display: flex;
   flex-direction: column;
   width: 100%;

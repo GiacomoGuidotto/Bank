@@ -18,7 +18,9 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.title}>Welcome to Bank</div>
-        <div className={styles.description}>The application</div>
+        <div className={styles.description}>
+          The demo application for testing purpose
+        </div>
       </main>
     </>
   );

@@ -4,6 +4,7 @@ import styles from "../styles/Signin.module.scss";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import { authenticate, createUser } from "../lib/service";
+import Link from "next/link";
 
 export default function SignIn() {
   const [message, setMessage] = useState();
@@ -45,6 +46,11 @@ export default function SignIn() {
       </Head>
 
       <main className={styles.main}>
+        <Link href="/">
+          <a className={styles.backToHome}>
+            <div>&lt;-- Go back</div>
+          </a>
+        </Link>
         <div className={styles.card}>
           <div className={styles.cardImage}>
             <Image
