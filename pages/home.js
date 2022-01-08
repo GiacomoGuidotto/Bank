@@ -48,7 +48,9 @@ export default function User() {
     const body = await createDeposits(token, name, type);
 
     if (body.error) {
-      setNewDepositMessage(body.message);
+      const transactionMessage =
+        body.message.charAt(0).toUpperCase() + body.message.slice(1);
+      setNewDepositMessage(transactionMessage);
       return;
     }
 
